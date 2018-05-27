@@ -1,6 +1,7 @@
 package com.pretosmind.f1.telemetry;
 
 import javax.swing.*;
+import org.apache.logging.log4j.LogManager;
 
 public class BlackF1Telemetry {
     private static void createAndShowGUI() {
@@ -16,6 +17,9 @@ public class BlackF1Telemetry {
     }
 
     public static void main(String[] args) {
+
+        LogManager.getLogger(BlackF1Telemetry.class).info("Starting application");
+
         javax.swing.SwingUtilities.invokeLater(() -> createAndShowGUI());
     }
 }
